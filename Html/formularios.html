@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- los formularios se cierran en etiqueta form-->
+     <form action="" name="contacto" id="contacto" method="post">
+        <label for="nombre">Nombre</label><!--etoqueta especifica de formularios-->
+        <input type="text" id="nombre" placeholder="Yazmin Itzel" maxlength="10" ><!--agregar una caja de texto -->
+        <!--otros atributos : value,reandoly, disabled,size,maxlength-->
+        <br/>
+        <!--text area permite agregar un campo de texto mas grande-->
+        <textarea name="mensaje" id="mensaje" placeholder="mensaje "></textarea>
+        <br>
+        <!--campos de tipo select -->
+        <label for="Pais">Pais</label>
+        <select name="Pais" id="Pais">
+            <option value="mexico">México</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+        </select>
+    <!--radio button -->
+        <br>
+        <input type="radio" id="español" value="español" name="idioma"> <label for="español">Español</label>
+        <br>
+        <input type="radio" id="ingles" value="ingles" name="idioma"> <label for="ingles">Ingles</label>
+        <br>
+
+        <!--checkbox-->
+        <input type="checkbox" id="terminos" name="terminos"/><label for="terminos">
+            Aceptar terminos y condiciones
+        </label>
+        <br>
+        <!--agregamos un tipo de botton -->
+        <input type="submit" value="enviar datos">
+     </form>
+
+    
+</body>
+</html>
