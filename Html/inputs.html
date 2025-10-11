@@ -7,8 +7,64 @@
 </head>
 <body>
     <form action="">
+        <!--Email-->
         <input type="email" name="correo" id="corre" placeholder="correo@gmail.com">
-    </form>
+        <br>
+        <br>
+
+        <!--Password-->
+        <input type="password" name="contraseña" id="contraseña" placeholder="Escribe tu contraseña">
+        <br>
+        <br>
+        <!--Numero podemos poner minimo y maximo-->
+         <input type="number" name="" id="" min="10" max="50" placeholder="30">
+        <br>
+        <br>
+        <!--tipo file, aqui escribimos el tipo de extencion del archivo
+        para hacer que el usuario pueda escojer multiple archivos lo podemos hacer con el atributo
+        multiple-->
+           <input type="file" name="" id="" accept=".jpg,.png,.pdf,.exe,.txt" multiple>
+        <br>
+        <br>
+        <!--este es Range nos permite elegir numeros de un rango -->
+        <input type="range" name="" id="" min="100" max="500" value="400">
+        <br>
+        <br>
+         <!--Color -->
+           <input type="color" name="" id="">
+        <br>
+        <br>
+        <!--Date para poner fecha, se puede poner que comience en una fecha inicial 
+        año-mes-dia se puede poner un minimo de fevcha a la que se puede ingresar  -->
+           <input type="date" name="" id="" value="2000-12-07" min="1996-01-01" max="2010-01-01">
+        <br>
+        <br>
+        <!--date time local, permite seleccionar fecha y hora-->
+            <input type="datetime-local" >
+        <br>
+        <br>
+        <!--este nos permite solamente el tiempo time-->
+           <input type="time">
+        <br>
+        <br>
+        <!--Hidden esto es util para cuando quiera mandar informacion a un servidor -->
+           <input type="hidden" name="valor-oculto" value="valor oculto">
+        <br>
+        <br>
+        <!--Imagen -->
+        <input type="image" src="./img/paisaje3.jpg" width="100">
+        <br>
+        <br>
+
+        <!-- Reset -->
+         <input type="reset" value="Limpiar Formulario">
+        
+        
+
+
+
+       <!--<input type="submit" value="Enviar">--> 
+       <button title="submit">Enviar</button>
     
 </body>
 </html>

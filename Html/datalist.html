@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataList</title>
+</head>
+<body>
+    <!-- data list permitir darle sugerencia a un usuario mientras esta escribiendo en un campo d etexto-->
+    
+    <form action="">
+        <label for="color">Escrible tu color </label>
+        <input type="text" name="color" id="color" list="colores">
+        <!--agregar la lista de informacion de sugerencia-->
+        <datalist id="colores">
+            <!--aqui van los colores-->
+            <option value="Azul"></option>
+            <option value="Amarillo"></option>
+            <option value="Naranja"></option>
+            <option value="Rojo"></option>
+            <option value="Rosa"></option>
+        </datalist>
+    </form>
+</body>
+</html>
