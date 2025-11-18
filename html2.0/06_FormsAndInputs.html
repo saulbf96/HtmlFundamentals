@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Inputs</title>
+</head>
+<body>
+    <!--ejemplo de un formulario con inputs -->
+    <form action="process.php">
+    <!--text-->
+        <div>
+            <!--aqui tiene que hacer match tanto label con input
+            si pones algo en value ese valor toma por ejemplo en el nombre -->
+            <label for="name">Nombre</label>
+            <br>
+            <input type="text" id="name" value="saul">
+        </div>
+        <!--email-->
+        <div>
+            <label for="email">Correo electonico</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com.mx">
+        </div>
+        <!--texto-->
+        <div>
+            <label for="message">Mensaje</label>
+            <br>
+            <!--con cols hacemos mas largo el area y rows mas anchos-->
+            <textarea name="message" id="message" placeholder="Escribe...." rows="10" cols="20"></textarea>
+        </div>
+        <!--seleccionar algo por ejemplo sexo -->
+
+        <!--seleccionar-->
+
+        <div>
+            <label for="sex">Sexo</label>
+            <select name="sex" id="sex">
+                <!--si pones selected se selecciona automaticamente uno -->
+                <option value="male" selected>Hombre</option>
+                <option value="female">Mujer</option>
+                <option value="binary">Persona no binaria</option>
+                <option value="other">Prefiero no decirlo</option>
+            </select>
+        </div>
+        <div>
+            <!--numeros-->
+            <label for="age">Edad</label>
+            <br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <!--ingresar fechas -->
+            
+            <label for="bithdate">Cumpleaños</label>
+            <br>
+            <input type="date" name="bithdate" id="bithdate">
+        </div>
+        <div>
+            <label for="membership">Afiliacion</label>
+            <input type="radio" name="membership" value="simple" id="membership">simple
+            <input type="radio" name="membership"value="standard" id="membership">standard
+            <input type="radio" name="membership" value="super" id="membership" checked>super
+        </div>
+        <div>
+            <label for="hobbi">Me gusta...</label>
+            <input type="checkbox" name="hobbi" id="hobbi" value="Futbol">
+             <input type="checkbox" name="hobbi" id="hobbi" value="Casino">
+              <input type="checkbox" name="hobbi" id="hobbi" value="Boleibol">
+        </div>
+        <!--input submit-->
+        <input type="submit" value="Enviar">
+
+        <!--usando botton tag submit-->
+        <button type="reset">Limpiar</button>
+
+    </form>
+    
+</body>
+</html>
